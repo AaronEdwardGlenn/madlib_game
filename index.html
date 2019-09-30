@@ -1,33 +1,81 @@
-<!DOCTYPE html>
-<html>
- <head>
-  <meta charset="utf-8" />
-  <title>Alchemy MadLibs</title>
-  <script src="app.js"></script>
-  <link rel="stylesheet" href="main.css">
-  
- </head>
- <body>
- 
-    <h1>Mad Libs</h1>
-     
-    <ol>
-      <li>Noun: <input type="text" id="noun-1"></li>
-      <li>Adjective: <input type="text" id="adjective-1"></li>
-      <li>Noun: <input type="text" id="noun-2"></li>
-      <li>Adjective: <input type="text" id="adjective-2"></li>
-      <li>Someone's Name: <input type="text" id="person-1"></li>
-      <li>Noun: <input type="text" id="noun-3"></li>
-      <li>Adjective: <input type="text" id="adjective-3"></li>
-      <li>Someone's Name: <input type="text" id="person-2"></li>
 
-    </ol>
-     
-    <button id="lib-button">"MADLIB COMPILE!"</button>
-      
-    <p>Your story: 
-    <span id="story"></span>
-    </p>
- 
- </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MADLIB AG</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <p class="intro"> Welcome to the MadLib Game! Enter your info in the boxes below and have fun!</p>
+
+    <div class="inputs">
+
+    <label>Noun 1 
+        <input
+        id="noun1-input">
+    </label>
+    
+    <br>
+
+    <label>Adj 1 
+        <input
+        id="adj1-input">
+    </label>
+
+    <br>
+
+    <label>Noun 2
+        <input
+        id="noun2-input">
+    </label>
+    
+    <br>
+
+    <label>Adj 2 
+        <input
+        id="adj2-input">
+    </label>
+    
+    <br>
+
+    <label>Noun 3
+        <input
+        id="noun3-input">
+    </label>
+    
+    <br>
+    
+    <label>Adj 3 
+        <input
+        id="adj3-input">
+    </label>
+    
+    <br>
+    
+    <br>
+
+
+    <Button onclick="madLib()">Click here to make your madlib!</Button>
+
+    </div>
+
+    <article class="hidden" id="lib">
+        
+        <p>Deep in the ocean a wild 
+        <span id="noun1"></span> lives with their 
+        <span id="adj1"></span> friends. </p>
+        <p> They all like to go to the coral reef to look for a <span id="noun2"></span>.</p>
+        <p>One <span id="adj2"></span> day, they were off to the reef and found <span id="noun3"></span>!</p>
+        <p>Can you beleive that! And it was so <span id="adj3"></span>!</p>
+        <p> That's just a lesson for you, you'll never know what is lurking under the deep blue sea.</p>
+        
+    </article>
+
+</body>
+
 </html>
